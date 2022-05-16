@@ -1,0 +1,159 @@
+body{
+    display: grid;
+    grid-template-columns: 75% 25%;
+    gap: 2px;
+}
+
+main{
+    padding: 10px;
+    grid-column: 1;
+    border: solid 7px #333;
+}
+
+aside {
+    padding: 10px;
+    grid-column: 2;
+    border: solid 7px #333;
+}
+
+header{
+    grid-column: 1 / span 2;
+    background-image: url("pictures/banner.jpg");
+    padding: 5%;
+    background-position: center, 10px;
+    border: solid 7px #333;
+    background-repeat: no-repeat;
+}
+
+a {
+    color: white;
+}
+
+.active {
+    background-color: rgb(108, 133, 67);
+}
+
+form {
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+form input {
+    width: 90%;
+    height: 30px;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+[name="message"] {
+    height: 70px;
+}
+
+[type="submit"] {
+    margin: 30px
+}
+
+header h1 {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+nav {
+    grid-column: 1 / span 2;
+
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li{
+    float: left;
+}
+
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+details { color: white}
+
+li a:hover:not(.active) {
+    background-color: rgb(132, 162, 74);
+}
+
+audio {
+    color: black;
+}
+
+table {
+    grid-column: 1 / span 2;
+    border-collapse: collapse;
+}
+
+main, aside, table {
+    background-color: rgb(160, 205, 100);
+}
+
+tr {
+    border: solid 4px #333;
+}
+
+td{
+    padding: 1px 10px;
+}
+
+img {
+    border: solid black 2px;
+    margin: 10px;
+}
+
+li img {
+    float: right;
+}
+
+hr {
+    height: 1px;
+    background-color: black;
+    border: none;
+}
+
+p {
+    white-space: pre-line;
+}
+
+blockquote {
+    border: solid #333 ;
+    font-style: italic;
+}
+
+aside img {
+    width: 80%;
+}
+
+.description{
+    margin: auto;
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;
+}
+
+@media (max-width: 1300px) {
+    td {
+        display: block;
+    }
+
+    main, aside{
+        grid-column: 1 / span 2;
+    }
+}
